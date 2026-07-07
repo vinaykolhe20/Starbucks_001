@@ -1,0 +1,37 @@
+package pages;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class HomePage {
+    WebDriver driver;
+
+    // Locators
+    By menuLink = By.xpath("//a[contains(text(),'Menu')]");
+    By signInBtn = By.xpath("//a[contains(text(),'Sign in')]");
+    By searchIcon = By.xpath("//button[@aria-label='Search']");
+
+    
+ // Create a reusable wait method in BaseTest.java
+    public WebElement waitForElement(By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+    
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void clickMenu() {
+    	 waitForElement(menuLink).click();
+    }
+
+    public void clickSignIn() {
+        driver.findElement(signInBtn).click();
+    }
+}	
