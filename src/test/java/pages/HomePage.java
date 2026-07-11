@@ -1,5 +1,6 @@
 package pages;
 
+import java.awt.List;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -16,6 +17,8 @@ public class HomePage {
     By signInBtn = By.xpath("//a[contains(text(),'Sign in')]");
     By searchIcon = By.xpath("//button[@aria-label='Search']");
 
+    By searchInput   = By.xpath("//input[@placeholder='Search']");
+    By searchResults = By.xpath("//ul[contains(@class,'search-results')]//li");
     
  // Create a reusable wait method in BaseTest.java
     public WebElement waitForElement(By locator) {
@@ -34,4 +37,16 @@ public class HomePage {
     public void clickSignIn() {
         driver.findElement(signInBtn).click();
     }
+    
+    public void clickSearch() {
+    	waitForElement(searchIcon).click();
+    }
+    
+    public void enterSearchText(String drinkName) {
+        WebElement input = waitForElement(searchInput);
+        input.clear();
+        input.sendKeys(drinkName);
+    }
+
+    // Get results list
 }	

@@ -39,6 +39,11 @@ public class BaseTest {
             .createTest(method.getName());
         
     }
+    
+    public WebElement waitForElement(By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
  // Add this in BaseTest.java after driver.get()
     public void handleCookiePopup() {
         try {
@@ -64,16 +69,16 @@ public class BaseTest {
             e.printStackTrace();
         }
     }
-    @AfterMethod
-    public void tearDown(ITestResult result) {
-    	if (result.getStatus() == ITestResult.FAILURE) {
-            ExtentVinay.test.fail(result.getThrowable());
-            takeScreenshot(result.getName());
-        } else {
-            ExtentVinay.test.pass("Test passed");
-        }
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void tearDown(ITestResult result) {
+//    	if (result.getStatus() == ITestResult.FAILURE) {
+//            ExtentVinay.test.fail(result.getThrowable());
+//            takeScreenshot(result.getName());
+//        } else {
+//            ExtentVinay.test.pass("Test passed");
+//        }
+//        driver.quit();
+//    }
     @AfterSuite
     public void flushReport() {
         ExtentVinay.extent.flush();
