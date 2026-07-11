@@ -1,0 +1,13 @@
+
+<!DOCTYPE suite SYSTEM "src">
+
+
+<suite name="Starbucks Automation Suite" parallel="methods" thread-count="1">
+
+    <test name="Homepage Tests">
+        <classes>
+            <class name="tests.HomePageTest"/>
+        </classes>
+    </test>
+
+</suite>

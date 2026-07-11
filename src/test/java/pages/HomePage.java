@@ -12,7 +12,7 @@ public class HomePage {
     WebDriver driver;
 
     // Locators
-    By menuLink = By.xpath("//a[contains(text(),'Menu')]");
+    By menuLink = By.xpath("(//a[contains(text(),'Menu')])[1]");
     By signInBtn = By.xpath("//a[contains(text(),'Sign in')]");
     By searchIcon = By.xpath("//button[@aria-label='Search']");
 
