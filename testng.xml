@@ -9,5 +9,12 @@
             <class name="tests.HomePageTest"/>
         </classes>
     </test>
+    
+    <test name="Add to Cart Tests">
+        <classes>
+            <class name="tests.TC003AddToCart"/>
+        </classes>
+    </test>
+
 
 </suite>

@@ -69,16 +69,16 @@ public class BaseTest {
             e.printStackTrace();
         }
     }
-//    @AfterMethod
-//    public void tearDown(ITestResult result) {
-//    	if (result.getStatus() == ITestResult.FAILURE) {
-//            ExtentVinay.test.fail(result.getThrowable());
-//            takeScreenshot(result.getName());
-//        } else {
-//            ExtentVinay.test.pass("Test passed");
-//        }
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void tearDown(ITestResult result) {
+    	if (result.getStatus() == ITestResult.FAILURE) {
+            ExtentVinay.test.fail(result.getThrowable());
+            takeScreenshot(result.getName());
+        } else {
+            ExtentVinay.test.pass("Test passed");
+        }
+        driver.quit();
+    }
     @AfterSuite
     public void flushReport() {
         ExtentVinay.extent.flush();
