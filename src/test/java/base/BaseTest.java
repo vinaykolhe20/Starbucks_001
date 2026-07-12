@@ -71,11 +71,8 @@ public class BaseTest {
     }
     @AfterMethod
     public void tearDown(ITestResult result) {
-    	if (result.getStatus() == ITestResult.FAILURE) {
-            ExtentVinay.test.fail(result.getThrowable());
+        if (result.getStatus() == ITestResult.FAILURE) {
             takeScreenshot(result.getName());
-        } else {
-            ExtentVinay.test.pass("Test passed");
         }
         driver.quit();
     }
