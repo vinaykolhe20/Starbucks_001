@@ -10,7 +10,7 @@ import pages.HomePage;
 public class TC003AddToCart extends BaseTest {
 
 	
-	@Test
+	@Test(retryAnalyzer = utils.RetryAnalyzer.class)
 	public void verifyTrendingNavigation() {
         HomePage home = new HomePage(driver);
         home.clickMenu();
