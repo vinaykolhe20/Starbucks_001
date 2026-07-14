@@ -69,13 +69,13 @@ public class BaseTest {
             e.printStackTrace();
         }
     }
-    @AfterMethod
-    public void tearDown(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            takeScreenshot(result.getName());
-        }
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void tearDown(ITestResult result) {
+//        if (result.getStatus() == ITestResult.FAILURE) {
+//            takeScreenshot(result.getName());
+//        }
+//        driver.quit();
+//    }
     @AfterSuite
     public void flushReport() {
         ExtentVinay.extent.flush();
