@@ -4,6 +4,7 @@ import java.awt.List;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +28,9 @@ public class HomePage {
     
     @FindBy(css="a[href='/']") WebElement logo;
     @FindBy(xpath = "//a[contains(text(),'store')]") WebElement store;
-    
+    @FindBy(xpath="//a[contains(text(),'Sign')]") WebElement hmSignIn;
+    @FindBy(xpath="//a[contains(text(),'Join')]") WebElement joinNow;
+    @FindBy(xpath="//a[contains(text(),'Start an order')]") WebElement startOrder;
     
  // Create a reusable wait method in BaseTest.java
     
@@ -42,7 +45,7 @@ public class HomePage {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
     public WebElement waitForElement(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
     
@@ -78,7 +81,23 @@ public class HomePage {
     }
     
     //
+    public void homeSignIn() {
+    	waitForElement(hmSignIn).click();
+    }
 
+    public void homeJoinNow() {
+    	waitForElement(joinNow).click();
+    }
+    
+    public void homeStartOrder() {
+    	WebElement element = waitForElement(startOrder);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript("arguments[0].scrollIntoView({block:'center'});", element);
+
+        js.executeScript("arguments[0].click();", element);
+    }
     // Get results list
 }	
 

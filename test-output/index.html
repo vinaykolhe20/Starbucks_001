@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\vinay\AppData\Local\Temp\testng-eclipse-71205081\testng-customsuite.xml</span>
+                    <span>C:\Users\vinay\AppData\Local\Temp\testng-eclipse-1108610939\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="storeFinderpageTitle">storeFinderpageTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="verify_home_StartOrder_navigation_StartOrder_page">verify_home_StartOrder_navigation_StartOrder_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="storeFinderpageTitle">
-                  </a> <!-- storeFinderpageTitle -->
-                  <span class="method-name">storeFinderpageTitle</span>
+                  <a name="verify_home_StartOrder_navigation_StartOrder_page">
+                  </a> <!-- verify_home_StartOrder_navigation_StartOrder_page -->
+                  <span class="method-name">verify_home_StartOrder_navigation_StartOrder_page</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vinay\AppData\Local\Temp\testng-eclipse-71205081\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vinay\AppData\Local\Temp\testng-eclipse-1108610939\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,7 +147,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;tests.HomePageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;storeFinderpageTitle&quot;/&gt;
+          &lt;include name=&quot;verify_home_StartOrder_navigation_StartOrder_page&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- tests.HomePageTest --&gt;
     &lt;/classes&gt;
@@ -177,7 +177,7 @@
               <span class="test-group-name">homepage</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">storeFinderpageTitle</span>
+                <span class="method-in-group-name">verify_home_StartOrder_navigation_StartOrder_page</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -185,7 +185,7 @@
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">storeFinderpageTitle</span>
+                <span class="method-in-group-name">verify_home_StartOrder_navigation_StartOrder_page</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -207,14 +207,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'storeFinderpageTitle')
+data.setCell(0, 1, 'verify_home_StartOrder_navigation_StartOrder_page')
 data.setCell(0, 2, 'tests.HomePageTest')
-data.setCell(0, 3, 11084);
+data.setCell(0, 3, 8695);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -229,17 +229,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.HomePageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyMenuNavigation</span>
+                <span class="ignored-method-name">verify_home_signIn_navigation_signin_page</span>
+                <br/>
+                <span class="ignored-method-name">verifyHomePageTitle</span>
                 <br/>
                 <span class="ignored-method-name">verify_Logo_IsDisplayed_AndLinksToHome</span>
                 <br/>
-                <span class="ignored-method-name">verifyHomePageTitle</span>
+                <span class="ignored-method-name">storeFinderpageTitle</span>
+                <br/>
+                <span class="ignored-method-name">verifyMenuNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verify_home_JoinNow_navigation_JoinNow_page</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -253,24 +259,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void tests.HomePageTest.storeFinderpageTitle())</span>
+                <span class="method-name">setUp(public void tests.HomePageTest.verify_home_StartOrder_navigation_StartOrder_page())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initPages</span>
-                <span class="method-start">16479 ms</span>
+                <span class="method-start">16845 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">storeFinderpageTitle</span>
-                <span class="method-start">16536 ms</span>
+                <span class="method-name">verify_home_StartOrder_navigation_StartOrder_page</span>
+                <span class="method-start">16966 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=storeFinderpageTitle status=SUCCESS method=HomePageTest.storeFinderpageTitle()[pri:...)</span>
-                <span class="method-start">27624 ms</span>
+                <span class="method-name">tearDown([TestResult name=verify_home_StartOrder_navigation_StartOrder_page status=SUCCESS method=HomePageTes...)</span>
+                <span class="method-start">25669 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">28119 ms</span>
+                <span class="method-start">26159 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

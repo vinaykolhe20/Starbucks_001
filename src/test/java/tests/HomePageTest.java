@@ -41,4 +41,28 @@ public class HomePageTest extends BaseTest {
 		String titleStore = driver.getTitle();
 		Assert.assertTrue(titleStore.contains("Store"));
 	}
+	
+	@Test(groups = { "smoke", "homepage" }, priority = 5)
+	public void verify_home_signIn_navigation_signin_page() {
+		home.homeSignIn();
+		String titleStore = driver.getTitle();
+		Assert.assertTrue(titleStore.contains("Account sign"));
+	}
+	
+	@Test(groups = { "smoke", "homepage" }, priority = 6)
+	public void verify_home_JoinNow_navigation_JoinNow_page() {
+		home.homeJoinNow();
+		String titleStore = driver.getTitle();
+		Assert.assertTrue(titleStore.contains("Create a Starbucks"));
+	}
+	
+	@Test(groups = { "smoke", "homepage" }, priority = 7)
+	public void verify_home_StartOrder_navigation_StartOrder_page() {
+		home.homeStartOrder();
+		String titleStore = driver.getTitle();
+		Assert.assertTrue(titleStore.contains("Menu"));
+	}
+	
+	
+	
 }
