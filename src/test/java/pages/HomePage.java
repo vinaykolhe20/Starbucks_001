@@ -26,7 +26,7 @@ public class HomePage {
     //Homepage title @FindBy(css = "a[href='/']") WebElement logo;
     
     @FindBy(css="a[href='/']") WebElement logo;
-    
+    @FindBy(xpath = "//a[contains(text(),'store')]") WebElement store;
     
     
  // Create a reusable wait method in BaseTest.java
@@ -41,7 +41,10 @@ public class HomePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-    
+    public WebElement waitForElement(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
     
     //Here we replaced POM with pagefactory
 //    public HomePage(WebDriver driver) {
@@ -68,6 +71,10 @@ public class HomePage {
     // Testcase HP02
     public boolean logo() {
     	return logo.isDisplayed();
+    }
+    
+    public void storeFinder() {
+    	waitForElement(store).click();
     }
     
     //

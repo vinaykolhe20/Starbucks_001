@@ -7,8 +7,8 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verify_Logo_IsDisplayed_AndLinksToHome"/>
-          <include name="verifyMenuNavigation"/>
+          <include name="storeFinderpageTitle"/>
+          <include name="initPages"/>
           <include name="flushReport"/>
         </methods>
       </class> <!-- tests.HomePageTest -->

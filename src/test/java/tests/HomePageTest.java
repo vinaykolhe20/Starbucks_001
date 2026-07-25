@@ -16,7 +16,7 @@ public class HomePageTest extends BaseTest {
 		home = new HomePage(driver); // ← runs before EVERY test ✓
 	}
 
-	@Test(groups = { "smoke", "homepage" }, priority = 1)
+	@Test(groups = { "regression", "homepage" }, priority = 1)
 	public void verifyHomePageTitle() {
 
 		String title = driver.getTitle();
@@ -35,4 +35,10 @@ public class HomePageTest extends BaseTest {
 		Assert.assertTrue(home.logo());
 	}
 
+	@Test(groups = { "smoke", "homepage" }, priority = 4)
+	public void storeFinderpageTitle() {
+		home.storeFinder();
+		String titleStore = driver.getTitle();
+		Assert.assertTrue(titleStore.contains("Store"));
+	}
 }

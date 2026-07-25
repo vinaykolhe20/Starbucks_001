@@ -1,115 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-22T23:11:09 IST" name="Default suite" finished-at="2026-07-22T23:13:55 IST" duration-ms="165286">
+  <suite started-at="2026-07-25T09:46:42 IST" name="Default suite" finished-at="2026-07-25T09:47:10 IST" duration-ms="28135">
     <groups>
-      <group name="regression">
-        <method signature="HomePageTest.verifyMenuNavigation()[pri:2, instance:tests.HomePageTest@7586beff]" name="verifyMenuNavigation" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_Logo_IsDisplayed_AndLinksToHome()[pri:3, instance:tests.HomePageTest@7586beff]" name="verify_Logo_IsDisplayed_AndLinksToHome" class="tests.HomePageTest"/>
-      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="HomePageTest.verifyHomePageTitle()[pri:1, instance:tests.HomePageTest@7586beff]" name="verifyHomePageTitle" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.storeFinderpageTitle()[pri:4, instance:tests.HomePageTest@6150c3ec]" name="storeFinderpageTitle" class="tests.HomePageTest"/>
       </group> <!-- smoke -->
       <group name="homepage">
-        <method signature="HomePageTest.verifyHomePageTitle()[pri:1, instance:tests.HomePageTest@7586beff]" name="verifyHomePageTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyMenuNavigation()[pri:2, instance:tests.HomePageTest@7586beff]" name="verifyMenuNavigation" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_Logo_IsDisplayed_AndLinksToHome()[pri:3, instance:tests.HomePageTest@7586beff]" name="verify_Logo_IsDisplayed_AndLinksToHome" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.storeFinderpageTitle()[pri:4, instance:tests.HomePageTest@6150c3ec]" name="storeFinderpageTitle" class="tests.HomePageTest"/>
       </group> <!-- homepage -->
     </groups>
-    <test started-at="2026-07-22T23:11:09 IST" name="Default test" finished-at="2026-07-22T23:13:55 IST" duration-ms="165286">
+    <test started-at="2026-07-25T09:46:42 IST" name="Default test" finished-at="2026-07-25T09:47:10 IST" duration-ms="28135">
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:11:10 IST" name="setUp" finished-at="2026-07-22T23:11:32 IST" duration-ms="22486" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-07-25T09:46:42 IST" name="setUp" finished-at="2026-07-25T09:46:58 IST" duration-ms="16479" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.HomePageTest.verifyHomePageTitle()]]>
+                <![CDATA[public void tests.HomePageTest.storeFinderpageTitle()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:11:32 IST" name="initPages" finished-at="2026-07-22T23:11:32 IST" duration-ms="407" status="PASS">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-07-25T09:46:58 IST" name="initPages" finished-at="2026-07-25T09:46:58 IST" duration-ms="55" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="verifyHomePageTitle()[pri:1, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:11:32 IST" name="verifyHomePageTitle" finished-at="2026-07-22T23:11:33 IST" duration-ms="290" status="PASS">
+        <test-method signature="storeFinderpageTitle()[pri:4, instance:tests.HomePageTest@6150c3ec]" started-at="2026-07-25T09:46:58 IST" name="storeFinderpageTitle" finished-at="2026-07-25T09:47:09 IST" duration-ms="11084" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:11:33 IST" name="tearDown" finished-at="2026-07-22T23:12:03 IST" duration-ms="30318" status="PASS">
+        </test-method> <!-- storeFinderpageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-07-25T09:47:09 IST" name="tearDown" finished-at="2026-07-25T09:47:10 IST" duration-ms="459" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=HomePageTest.verifyHomePageTitle()[pri:1, instance:tests.HomePageTest@7586beff] output={null}]]]>
+                <![CDATA[[TestResult name=storeFinderpageTitle status=SUCCESS method=HomePageTest.storeFinderpageTitle()[pri:4, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:12:03 IST" name="setUp" finished-at="2026-07-22T23:12:22 IST" duration-ms="18600" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.verifyMenuNavigation()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:12:22 IST" name="initPages" finished-at="2026-07-22T23:12:22 IST" duration-ms="99" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method signature="verifyMenuNavigation()[pri:2, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:12:22 IST" name="verifyMenuNavigation" finished-at="2026-07-22T23:12:43 IST" duration-ms="21565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMenuNavigation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:12:43 IST" name="tearDown" finished-at="2026-07-22T23:13:13 IST" duration-ms="29678" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyMenuNavigation status=SUCCESS method=HomePageTest.verifyMenuNavigation()[pri:2, instance:tests.HomePageTest@7586beff] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:13:13 IST" name="setUp" finished-at="2026-07-22T23:13:32 IST" duration-ms="18995" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.verify_Logo_IsDisplayed_AndLinksToHome()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_Logo_IsDisplayed_AndLinksToHome()[pri:3, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:13:32 IST" name="verify_Logo_IsDisplayed_AndLinksToHome" finished-at="2026-07-22T23:13:32 IST" duration-ms="248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Logo_IsDisplayed_AndLinksToHome -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:13:32 IST" name="initPages" finished-at="2026-07-22T23:13:32 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:13:32 IST" name="tearDown" finished-at="2026-07-22T23:13:55 IST" duration-ms="22370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Logo_IsDisplayed_AndLinksToHome status=SUCCESS method=HomePageTest.verify_Logo_IsDisplayed_AndLinksToHome()[pri:3, instance:tests.HomePageTest@7586beff] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.HomePageTest@7586beff]" started-at="2026-07-22T23:13:55 IST" name="flushReport" finished-at="2026-07-22T23:13:56 IST" duration-ms="735" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-07-25T09:47:10 IST" name="flushReport" finished-at="2026-07-25T09:47:10 IST" duration-ms="407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

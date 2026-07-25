@@ -5,6 +5,7 @@
 <suite name="Starbucks Automation Suite" thread-count="1">
 
     <test name="Homepage Tests">
+    
         <classes>
             <class name="tests.HomePageTest"/>
         </classes>
