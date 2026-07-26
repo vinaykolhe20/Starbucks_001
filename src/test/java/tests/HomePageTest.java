@@ -1,5 +1,7 @@
 package tests;
 
+import java.util.*;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -63,6 +65,20 @@ public class HomePageTest extends BaseTest {
 		Assert.assertTrue(titleStore.contains("Menu"));
 	}
 	
+	@Test(priority = 8)
+	public void verify_FooterSections_ArePresent() {
+	    List<String> expectedSections = Arrays.asList(
+	        "About Us", "Careers", "Social Impact", 
+	        "For Business Partners", "Order and Pick Up"
+	    );
+	    
+	    List<String> actualSections = home.getFooterSectionTitles();
+	    
+	    for (String expected : expectedSections) {
+	        Assert.assertTrue(actualSections.contains(expected), 
+	            expected + " section missing from footer");
+	    }
+	}
 	
 	
 }

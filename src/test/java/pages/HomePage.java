@@ -1,6 +1,7 @@
 package pages;
 
-import java.awt.List;
+import java.util.ArrayList;
+import java.util.List;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -31,6 +32,9 @@ public class HomePage {
     @FindBy(xpath="//a[contains(text(),'Sign')]") WebElement hmSignIn;
     @FindBy(xpath="//a[contains(text(),'Join')]") WebElement joinNow;
     @FindBy(xpath="//a[contains(text(),'Start an order')]") WebElement startOrder;
+    
+    @FindBy(css = "footer") WebElement footer;
+    @FindBy(xpath = "//footer//h2 | //footer//h3") List<WebElement> footerSectionHeadings;
     
  // Create a reusable wait method in BaseTest.java
     
@@ -99,6 +103,16 @@ public class HomePage {
         js.executeScript("arguments[0].click();", element);
     }
     // Get results list
+    
+    public List<String> getFooterSectionTitles() {
+        List<String> titles = new ArrayList<>();
+        for (WebElement heading : footerSectionHeadings) {
+            titles.add(heading.getText().trim());
+        }
+        return titles;
+    }
+    
+    
 }	
 
 

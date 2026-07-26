@@ -2,48 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-25T18:40:31 IST" name="Default suite" finished-at="2026-07-25T18:40:58 IST" duration-ms="26182">
+  <suite started-at="2026-07-26T21:55:52 IST" name="Default suite" finished-at="2026-07-26T21:56:18 IST" duration-ms="26660">
     <groups>
-      <group name="smoke">
-        <method signature="HomePageTest.verify_home_StartOrder_navigation_StartOrder_page()[pri:7, instance:tests.HomePageTest@dd05255]" name="verify_home_StartOrder_navigation_StartOrder_page" class="tests.HomePageTest"/>
-      </group> <!-- smoke -->
-      <group name="homepage">
-        <method signature="HomePageTest.verify_home_StartOrder_navigation_StartOrder_page()[pri:7, instance:tests.HomePageTest@dd05255]" name="verify_home_StartOrder_navigation_StartOrder_page" class="tests.HomePageTest"/>
-      </group> <!-- homepage -->
     </groups>
-    <test started-at="2026-07-25T18:40:31 IST" name="Default test" finished-at="2026-07-25T18:40:58 IST" duration-ms="26182">
+    <test started-at="2026-07-26T21:55:52 IST" name="Default test" finished-at="2026-07-26T21:56:18 IST" duration-ms="26660">
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@dd05255]" started-at="2026-07-25T18:40:31 IST" name="setUp" finished-at="2026-07-25T18:40:48 IST" duration-ms="16843" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6a78afa0]" started-at="2026-07-26T21:55:52 IST" name="setUp" finished-at="2026-07-26T21:56:15 IST" duration-ms="23077" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.HomePageTest.verify_home_StartOrder_navigation_StartOrder_page()]]>
+                <![CDATA[public void tests.HomePageTest.verify_FooterSections_ArePresent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@dd05255]" started-at="2026-07-25T18:40:48 IST" name="initPages" finished-at="2026-07-25T18:40:48 IST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6a78afa0]" started-at="2026-07-26T21:56:15 IST" name="initPages" finished-at="2026-07-26T21:56:15 IST" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="verify_home_StartOrder_navigation_StartOrder_page()[pri:7, instance:tests.HomePageTest@dd05255]" started-at="2026-07-25T18:40:48 IST" name="verify_home_StartOrder_navigation_StartOrder_page" finished-at="2026-07-25T18:40:57 IST" duration-ms="8695" status="PASS">
+        <test-method signature="verify_FooterSections_ArePresent()[pri:10, instance:tests.HomePageTest@6a78afa0]" started-at="2026-07-26T21:56:15 IST" name="verify_FooterSections_ArePresent" finished-at="2026-07-26T21:56:15 IST" duration-ms="478" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_home_StartOrder_navigation_StartOrder_page -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@dd05255]" started-at="2026-07-25T18:40:57 IST" name="tearDown" finished-at="2026-07-25T18:40:58 IST" duration-ms="465" status="PASS">
+        </test-method> <!-- verify_FooterSections_ArePresent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6a78afa0]" started-at="2026-07-26T21:56:15 IST" name="tearDown" finished-at="2026-07-26T21:56:18 IST" duration-ms="2835" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_home_StartOrder_navigation_StartOrder_page status=SUCCESS method=HomePageTest.verify_home_StartOrder_navigation_StartOrder_page()[pri:7, instance:tests.HomePageTest@dd05255] output={null}]]]>
+                <![CDATA[[TestResult name=verify_FooterSections_ArePresent status=SUCCESS method=HomePageTest.verify_FooterSections_ArePresent()[pri:10, instance:tests.HomePageTest@6a78afa0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.HomePageTest@dd05255]" started-at="2026-07-25T18:40:58 IST" name="flushReport" finished-at="2026-07-25T18:40:58 IST" duration-ms="381" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.HomePageTest@6a78afa0]" started-at="2026-07-26T21:56:18 IST" name="flushReport" finished-at="2026-07-26T21:56:19 IST" duration-ms="568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
