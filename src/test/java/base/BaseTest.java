@@ -13,6 +13,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -21,6 +24,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.ConfigReader;
 import utils.ExtentVinay;
 
 public class BaseTest {
@@ -29,10 +33,35 @@ public class BaseTest {
     @BeforeMethod
     public void setUp(Method method) {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        String browser = ConfigReader.getBrowser();
+
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                if (ConfigReader.isHeadless()) {
+                    chromeOptions.addArguments("--headless=new");
+                }
+                driver = new ChromeDriver(chromeOptions);
+                break;
+
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+                break;
+
+            case "edge":
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
+                break;
+
+            default:
+                throw new IllegalArgumentException("Browser not supported: " + browser);
+        }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://www.starbucks.com");
+        driver.manage().timeouts().implicitlyWait(
+                Duration.ofSeconds(ConfigReader.getImplicitWait()));
+        driver.get(ConfigReader.getBaseUrl());
         handleCookiePopup();
         ExtentVinay.getInstance();
         ExtentVinay.test = ExtentVinay.extent
