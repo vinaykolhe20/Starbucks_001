@@ -11,6 +11,16 @@
         </classes>
     </test>
     
+    <test name="Add to Cart Tests">
+        <classes>
+            <class name="tests.TC003AddToCart"/>
+        </classes>
+    </test>
     
+    <test name="Check Nutrition">
+        <classes>
+            <class name="tests.TC004CheckNutrition"/>
+        </classes>
+    </test>
 
 </suite>

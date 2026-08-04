@@ -1,277 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-01T18:05:02 IST" name="Starbucks Automation Suite" finished-at="2026-08-01T18:07:40 IST" duration-ms="157729">
+  <suite started-at="2026-08-02T17:29:30 IST" name="Default suite" finished-at="2026-08-02T17:29:56 IST" duration-ms="25570">
     <groups>
-      <group name="regression">
-        <method signature="HomePageTest.verifyHomePageTitle()[pri:1, instance:tests.HomePageTest@6150c3ec]" name="verifyHomePageTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyMenuNavigation()[pri:2, instance:tests.HomePageTest@6150c3ec]" name="verifyMenuNavigation" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_Logo_IsDisplayed_AndLinksToHome()[pri:3, instance:tests.HomePageTest@6150c3ec]" name="verify_Logo_IsDisplayed_AndLinksToHome" class="tests.HomePageTest"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="HomePageTest.storeFinderpageTitle()[pri:4, instance:tests.HomePageTest@6150c3ec]" name="storeFinderpageTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_home_signIn_navigation_signin_page()[pri:5, instance:tests.HomePageTest@6150c3ec]" name="verify_home_signIn_navigation_signin_page" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_home_JoinNow_navigation_JoinNow_page()[pri:6, instance:tests.HomePageTest@6150c3ec]" name="verify_home_JoinNow_navigation_JoinNow_page" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_home_StartOrder_navigation_StartOrder_page()[pri:7, instance:tests.HomePageTest@6150c3ec]" name="verify_home_StartOrder_navigation_StartOrder_page" class="tests.HomePageTest"/>
-      </group> <!-- smoke -->
-      <group name="homepage">
-        <method signature="HomePageTest.verifyHomePageTitle()[pri:1, instance:tests.HomePageTest@6150c3ec]" name="verifyHomePageTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyMenuNavigation()[pri:2, instance:tests.HomePageTest@6150c3ec]" name="verifyMenuNavigation" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_Logo_IsDisplayed_AndLinksToHome()[pri:3, instance:tests.HomePageTest@6150c3ec]" name="verify_Logo_IsDisplayed_AndLinksToHome" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.storeFinderpageTitle()[pri:4, instance:tests.HomePageTest@6150c3ec]" name="storeFinderpageTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_home_signIn_navigation_signin_page()[pri:5, instance:tests.HomePageTest@6150c3ec]" name="verify_home_signIn_navigation_signin_page" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_home_JoinNow_navigation_JoinNow_page()[pri:6, instance:tests.HomePageTest@6150c3ec]" name="verify_home_JoinNow_navigation_JoinNow_page" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verify_home_StartOrder_navigation_StartOrder_page()[pri:7, instance:tests.HomePageTest@6150c3ec]" name="verify_home_StartOrder_navigation_StartOrder_page" class="tests.HomePageTest"/>
-      </group> <!-- homepage -->
     </groups>
-    <test started-at="2026-08-01T18:05:02 IST" name="Homepage Tests" finished-at="2026-08-01T18:07:40 IST" duration-ms="157729">
-      <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:02 IST" name="setUp" finished-at="2026-08-01T18:05:20 IST" duration-ms="17599" status="PASS">
+    <test started-at="2026-08-02T17:29:30 IST" name="Default test" finished-at="2026-08-02T17:29:56 IST" duration-ms="25570">
+      <class name="tests.SignInTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:30 IST" name="setUp" finished-at="2026-08-02T17:29:48 IST" duration-ms="17685" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.HomePageTest.verifyHomePageTitle()]]>
+                <![CDATA[public void tests.SignInTest.verify_SignInPage_Loadwith_EmailPasswordFields()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:20 IST" name="initPages" finished-at="2026-08-01T18:05:20 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="navigateToSignIn()[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:48 IST" name="navigateToSignIn" finished-at="2026-08-02T17:29:56 IST" duration-ms="7396" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method signature="verifyHomePageTitle()[pri:1, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:20 IST" name="verifyHomePageTitle" finished-at="2026-08-01T18:05:20 IST" duration-ms="26" status="PASS">
+        </test-method> <!-- navigateToSignIn -->
+        <test-method signature="verify_SignInPage_Loadwith_EmailPasswordFields()[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:56 IST" name="verify_SignInPage_Loadwith_EmailPasswordFields" finished-at="2026-08-02T17:29:56 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:20 IST" name="tearDown" finished-at="2026-08-01T18:05:20 IST" duration-ms="272" status="PASS">
+        </test-method> <!-- verify_SignInPage_Loadwith_EmailPasswordFields -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:56 IST" name="tearDown" finished-at="2026-08-02T17:29:56 IST" duration-ms="357" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=HomePageTest.verifyHomePageTitle()[pri:1, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
+                <![CDATA[[TestResult name=verify_SignInPage_Loadwith_EmailPasswordFields status=SUCCESS method=SignInTest.verify_SignInPage_Loadwith_EmailPasswordFields()[pri:0, instance:tests.SignInTest@44c03695] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:20 IST" name="setUp" finished-at="2026-08-01T18:05:35 IST" duration-ms="14599" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.verifyMenuNavigation()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:35 IST" name="initPages" finished-at="2026-08-01T18:05:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method signature="verifyMenuNavigation()[pri:2, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:35 IST" name="verifyMenuNavigation" finished-at="2026-08-01T18:05:44 IST" duration-ms="9345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMenuNavigation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:44 IST" name="tearDown" finished-at="2026-08-01T18:05:45 IST" duration-ms="285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyMenuNavigation status=SUCCESS method=HomePageTest.verifyMenuNavigation()[pri:2, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:45 IST" name="setUp" finished-at="2026-08-01T18:05:58 IST" duration-ms="13787" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.verify_Logo_IsDisplayed_AndLinksToHome()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_Logo_IsDisplayed_AndLinksToHome()[pri:3, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:58 IST" name="verify_Logo_IsDisplayed_AndLinksToHome" finished-at="2026-08-01T18:05:58 IST" duration-ms="40" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Logo_IsDisplayed_AndLinksToHome -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:58 IST" name="initPages" finished-at="2026-08-01T18:05:58 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:58 IST" name="tearDown" finished-at="2026-08-01T18:05:59 IST" duration-ms="237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Logo_IsDisplayed_AndLinksToHome status=SUCCESS method=HomePageTest.verify_Logo_IsDisplayed_AndLinksToHome()[pri:3, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:05:59 IST" name="setUp" finished-at="2026-08-01T18:06:12 IST" duration-ms="13418" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.storeFinderpageTitle()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="storeFinderpageTitle()[pri:4, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:12 IST" name="storeFinderpageTitle" finished-at="2026-08-01T18:06:19 IST" duration-ms="6444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- storeFinderpageTitle -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:12 IST" name="initPages" finished-at="2026-08-01T18:06:12 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:19 IST" name="tearDown" finished-at="2026-08-01T18:06:19 IST" duration-ms="349" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=storeFinderpageTitle status=SUCCESS method=HomePageTest.storeFinderpageTitle()[pri:4, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:19 IST" name="setUp" finished-at="2026-08-01T18:06:34 IST" duration-ms="14869" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.verify_home_signIn_navigation_signin_page()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:34 IST" name="initPages" finished-at="2026-08-01T18:06:34 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method signature="verify_home_signIn_navigation_signin_page()[pri:5, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:34 IST" name="verify_home_signIn_navigation_signin_page" finished-at="2026-08-01T18:06:41 IST" duration-ms="7073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_home_signIn_navigation_signin_page -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:41 IST" name="tearDown" finished-at="2026-08-01T18:06:41 IST" duration-ms="306" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_home_signIn_navigation_signin_page status=SUCCESS method=HomePageTest.verify_home_signIn_navigation_signin_page()[pri:5, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:41 IST" name="setUp" finished-at="2026-08-01T18:06:55 IST" duration-ms="14282" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.verify_home_JoinNow_navigation_JoinNow_page()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_home_JoinNow_navigation_JoinNow_page()[pri:6, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:55 IST" name="verify_home_JoinNow_navigation_JoinNow_page" finished-at="2026-08-01T18:07:04 IST" duration-ms="8425" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_home_JoinNow_navigation_JoinNow_page -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:06:55 IST" name="initPages" finished-at="2026-08-01T18:06:55 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:04 IST" name="tearDown" finished-at="2026-08-01T18:07:04 IST" duration-ms="217" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_home_JoinNow_navigation_JoinNow_page status=SUCCESS method=HomePageTest.verify_home_JoinNow_navigation_JoinNow_page()[pri:6, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:04 IST" name="setUp" finished-at="2026-08-01T18:07:18 IST" duration-ms="13803" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.verify_home_StartOrder_navigation_StartOrder_page()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_home_StartOrder_navigation_StartOrder_page()[pri:7, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:18 IST" name="verify_home_StartOrder_navigation_StartOrder_page" finished-at="2026-08-01T18:07:26 IST" duration-ms="7768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_home_StartOrder_navigation_StartOrder_page -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:18 IST" name="initPages" finished-at="2026-08-01T18:07:18 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:26 IST" name="tearDown" finished-at="2026-08-01T18:07:26 IST" duration-ms="203" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_home_StartOrder_navigation_StartOrder_page status=SUCCESS method=HomePageTest.verify_home_StartOrder_navigation_StartOrder_page()[pri:7, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:26 IST" name="setUp" finished-at="2026-08-01T18:07:40 IST" duration-ms="13994" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.HomePageTest.verify_FooterSections_ArePresent()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_FooterSections_ArePresent()[pri:8, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:40 IST" name="verify_FooterSections_ArePresent" finished-at="2026-08-01T18:07:40 IST" duration-ms="83" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_FooterSections_ArePresent -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:40 IST" name="initPages" finished-at="2026-08-01T18:07:40 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:40 IST" name="tearDown" finished-at="2026-08-01T18:07:40 IST" duration-ms="185" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_FooterSections_ArePresent status=SUCCESS method=HomePageTest.verify_FooterSections_ArePresent()[pri:8, instance:tests.HomePageTest@6150c3ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.HomePageTest@6150c3ec]" started-at="2026-08-01T18:07:40 IST" name="flushReport" finished-at="2026-08-01T18:07:40 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:56 IST" name="flushReport" finished-at="2026-08-02T17:29:56 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- tests.HomePageTest -->
-    </test> <!-- Homepage Tests -->
-  </suite> <!-- Starbucks Automation Suite -->
+      </class> <!-- tests.SignInTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
