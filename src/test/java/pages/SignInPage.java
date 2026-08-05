@@ -16,8 +16,8 @@ public class SignInPage {
 	@FindBy(id = "username") WebElement username;
 	@FindBy(id = "password") WebElement userPswd;
 	@FindBy(xpath = "//a[contains(text(),'store')]") WebElement store;
-	@FindBy(xpath="//button[contains(text(),'SignIn')]") WebElement signIn;
-	
+	@FindBy(xpath = "//button[@data-e2e='signInButton']")
+	WebElement signIn;	
 	
 	@FindBy(xpath="//span[contains(text(),'Username or email address')]") WebElement enterEmail;
 	@FindBy(xpath="//span[contains(text(),'Password')]") WebElement enterPassword;
@@ -44,18 +44,20 @@ public class SignInPage {
 		signIn.click();
 	}
 	
+	public String getEmailErrorText() {
+	    //log.info("Getting email error message text");
+	    return waitForElement(emailError).getText().trim();
+	}
+	
 	public void enterEmail(String email) {
-        //log.info("Entering email: " + email);
-        waitForElement(enterEmail).clear();
-        enterEmail.sendKeys(email);
-    }
+	    waitForElement(username).clear();
+	    username.sendKeys(email);
+	}
 
-    public void enterPassword(String password) {
-       // log.info("Entering password");
-        waitForElement(enterPassword).clear();
-        enterPassword.sendKeys(password);
-    }
-    
+	public void enterPassword(String password) {
+	    waitForElement(userPswd).clear();
+	    userPswd.sendKeys(password);
+	}
     
     
     

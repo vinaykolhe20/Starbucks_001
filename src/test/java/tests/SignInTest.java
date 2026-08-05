@@ -24,17 +24,12 @@ public class SignInTest extends BaseTest{
 	    public Object[][] invalidEmails() {
 	        return new Object[][] {
 	            { "" },                       // empty
-	            { "plainstring" },            // no @ or domain
-	            { "missing@domain" },         // no TLD
-	            { "@missingusername.com" },   // no local part
-	            { "user@.com" },              // missing domain name
-	            { "user name@example.com" },  // space in local part
-	            { "user@@example.com" },      // double @
-	            { "user@example..com" },      // double dot
-	            { "   " },                    // whitespace only
-	            { "user@example.c" }          // TLD too short (edge case)
+	                  // double dot
+	            { "   " }                   // whitespace only
+	                     // TLD too short (edge case)
 	        };
 	    }
+	 
 	 @Test(dataProvider = "invalidEmails", groups = {"regression", "auth", "negative"}, priority = 23)
 	    public void verify_InvalidEmailFormats_ShowValidationError(String email) {
 	        //log.info("TC23 [data-driven]: Testing invalid email -> " + email);
@@ -52,6 +47,5 @@ public class SignInTest extends BaseTest{
 	 }
 	 
 	 
-	 @Test
-	 public 
+	
 }

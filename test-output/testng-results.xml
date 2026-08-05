@@ -1,43 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-02T17:29:30 IST" name="Default suite" finished-at="2026-08-02T17:29:56 IST" duration-ms="25570">
+  <suite started-at="2026-08-05T07:29:32 IST" name="Default suite" finished-at="2026-08-05T07:30:32 IST" duration-ms="60007">
     <groups>
+      <group name="negative">
+        <method signature="SignInTest.verify_InvalidEmailFormats_ShowValidationError(java.lang.String)[pri:23, instance:tests.SignInTest@9d5509a]" name="verify_InvalidEmailFormats_ShowValidationError" class="tests.SignInTest"/>
+      </group> <!-- negative -->
+      <group name="auth">
+        <method signature="SignInTest.verify_InvalidEmailFormats_ShowValidationError(java.lang.String)[pri:23, instance:tests.SignInTest@9d5509a]" name="verify_InvalidEmailFormats_ShowValidationError" class="tests.SignInTest"/>
+      </group> <!-- auth -->
+      <group name="regression">
+        <method signature="SignInTest.verify_InvalidEmailFormats_ShowValidationError(java.lang.String)[pri:23, instance:tests.SignInTest@9d5509a]" name="verify_InvalidEmailFormats_ShowValidationError" class="tests.SignInTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2026-08-02T17:29:30 IST" name="Default test" finished-at="2026-08-02T17:29:56 IST" duration-ms="25570">
+    <test started-at="2026-08-05T07:29:32 IST" name="Default test" finished-at="2026-08-05T07:30:32 IST" duration-ms="60007">
       <class name="tests.SignInTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:30 IST" name="setUp" finished-at="2026-08-02T17:29:48 IST" duration-ms="17685" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:29:32 IST" name="setUp" finished-at="2026-08-05T07:29:51 IST" duration-ms="18804" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.SignInTest.verify_SignInPage_Loadwith_EmailPasswordFields()]]>
+                <![CDATA[public void tests.SignInTest.verify_InvalidEmailFormats_ShowValidationError(java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateToSignIn()[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:48 IST" name="navigateToSignIn" finished-at="2026-08-02T17:29:56 IST" duration-ms="7396" status="PASS">
+        <test-method is-config="true" signature="navigateToSignIn()[pri:0, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:29:51 IST" name="navigateToSignIn" finished-at="2026-08-05T07:30:03 IST" duration-ms="12025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToSignIn -->
-        <test-method signature="verify_SignInPage_Loadwith_EmailPasswordFields()[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:56 IST" name="verify_SignInPage_Loadwith_EmailPasswordFields" finished-at="2026-08-02T17:29:56 IST" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_SignInPage_Loadwith_EmailPasswordFields -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:56 IST" name="tearDown" finished-at="2026-08-02T17:29:56 IST" duration-ms="357" status="PASS">
+        <test-method signature="verify_InvalidEmailFormats_ShowValidationError(java.lang.String)[pri:23, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:30:03 IST" name="verify_InvalidEmailFormats_ShowValidationError" data-provider="invalidEmails" finished-at="2026-08-05T07:30:04 IST" duration-ms="931" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_SignInPage_Loadwith_EmailPasswordFields status=SUCCESS method=SignInTest.verify_SignInPage_Loadwith_EmailPasswordFields()[pri:0, instance:tests.SignInTest@44c03695] output={null}]]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_InvalidEmailFormats_ShowValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:30:04 IST" name="tearDown" finished-at="2026-08-05T07:30:05 IST" duration-ms="422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_InvalidEmailFormats_ShowValidationError status=SUCCESS method=SignInTest.verify_InvalidEmailFormats_ShowValidationError(java.lang.String)[pri:23, instance:tests.SignInTest@9d5509a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.SignInTest@44c03695]" started-at="2026-08-02T17:29:56 IST" name="flushReport" finished-at="2026-08-02T17:29:56 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:30:05 IST" name="setUp" finished-at="2026-08-05T07:30:22 IST" duration-ms="16883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SignInTest.verify_InvalidEmailFormats_ShowValidationError(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToSignIn()[pri:0, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:30:22 IST" name="navigateToSignIn" finished-at="2026-08-05T07:30:31 IST" duration-ms="9437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSignIn -->
+        <test-method signature="verify_InvalidEmailFormats_ShowValidationError(java.lang.String)[pri:23, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:30:31 IST" name="verify_InvalidEmailFormats_ShowValidationError" data-provider="invalidEmails" finished-at="2026-08-05T07:30:32 IST" duration-ms="1008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_InvalidEmailFormats_ShowValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:30:32 IST" name="tearDown" finished-at="2026-08-05T07:30:32 IST" duration-ms="428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_InvalidEmailFormats_ShowValidationError status=SUCCESS method=SignInTest.verify_InvalidEmailFormats_ShowValidationError(java.lang.String)[pri:23, instance:tests.SignInTest@9d5509a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.SignInTest@9d5509a]" started-at="2026-08-05T07:30:32 IST" name="flushReport" finished-at="2026-08-05T07:30:33 IST" duration-ms="334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
