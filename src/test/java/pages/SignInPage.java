@@ -59,6 +59,10 @@ public class SignInPage {
 	    userPswd.sendKeys(password);
 	}
     
+	public String getPasswordErrorText() {
+	    //log.info("Getting email error message text");
+	    return waitForElement(passwordError).getText().trim();
+	}
     
     
 }

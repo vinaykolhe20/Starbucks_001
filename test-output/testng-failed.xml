@@ -8,7 +8,7 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="navigateToSignIn"/>
-          <include name="verify_InvalidEmailFormats_ShowValidationError" invocation-numbers="1 2 3 4 5 6 7 9"/>
+          <include name="verify_InvalidPasswordFormats_ShowValidationError" invocation-numbers="0 1"/>
           <include name="flushReport"/>
         </methods>
       </class> <!-- tests.SignInTest -->

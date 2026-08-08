@@ -19,7 +19,7 @@ public class SignInTest extends BaseTest{
 	        homePage.homeSignIn();
 	        signInPage = new SignInPage(driver);
 	    }
-	 
+	 //Data for invalid email id fields
 	 @DataProvider(name = "invalidEmails")
 	    public Object[][] invalidEmails() {
 	        return new Object[][] {
@@ -29,7 +29,7 @@ public class SignInTest extends BaseTest{
 	                     // TLD too short (edge case)
 	        };
 	    }
-	 
+	 //Test for checking invalid email input from the data set
 	 @Test(dataProvider = "invalidEmails", groups = {"regression", "auth", "negative"}, priority = 23)
 	    public void verify_InvalidEmailFormats_ShowValidationError(String email) {
 	        //log.info("TC23 [data-driven]: Testing invalid email -> " + email);
@@ -40,6 +40,32 @@ public class SignInTest extends BaseTest{
 	        Assert.assertFalse(signInPage.getEmailErrorText().isEmpty(),
 	            "Expected validation error for invalid email: '" + email + "'");
 	    }
+	 
+	 
+	 
+	 //Data for invalid password empty and space
+	 @DataProvider(name = "invalidPasswords")
+	    public Object[][] invalidPasswords() {
+	        return new Object[][] {
+	            { "" },                       // empty
+	                  // double dot
+	            { "   " }                   // whitespace only
+	                     // TLD too short (edge case)
+	        };
+	    }
+	 
+	//Test for checking invalid email input from the data set
+		 @Test(dataProvider = "invalidPasswords", groups = {"regression", "auth", "negative"}, priority = 24)
+		    public void verify_InvalidPasswordFormats_ShowValidationError(String password) {
+		        //log.info("TC23 [data-driven]: Testing invalid email -> " + email);
+		        signInPage.enterEmail("someemail@gmail.com");
+		        signInPage.enterPassword(password);
+		        signInPage.signInpagebutton();
+
+		        Assert.assertFalse(signInPage.getPasswordErrorText().isEmpty(),
+		            "Expected validation error for invalid email: '" + password + "'");
+		    }
+		 
 	 
 	 @Test
 	 public void verify_SignInPage_Loadwith_EmailPasswordFields() {
