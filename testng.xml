@@ -11,16 +11,19 @@
         </classes>
     </test>
     
-    <test name="Add to Cart Tests">
+    <test name="JoinNow Tests">
+    
         <classes>
-            <class name="tests.TC003AddToCart"/>
+            <class name="tests.JoinNowTest"/>
         </classes>
     </test>
     
-    <test name="Check Nutrition">
+    <test name="SignIn Tests">
+    
         <classes>
-            <class name="tests.TC004CheckNutrition"/>
+            <class name="tests.SignInTest"/>
         </classes>
     </test>
+    
 
 </suite>

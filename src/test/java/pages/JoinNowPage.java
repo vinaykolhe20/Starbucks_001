@@ -28,6 +28,9 @@ public class JoinNowPage {
  // ---- Validation/error elements ----
     @FindBy(xpath="//span[contains(text(),'email address.')]") WebElement emailError;
 	@FindBy(xpath="//span[contains(text(),'Enter a password.')]") WebElement passwordError;
+	//------------------Password Validation--------------------------------
+	@FindBy(css = "div.sb-expander") WebElement passwordValidationSection;
+	
 	
     
     // ---- Constructor ----
@@ -90,6 +93,15 @@ public class JoinNowPage {
         return waitForElement(passwordError).getText().trim();
     }
 
+    public boolean isPasswordValidationSectionShown() {
+        try {
+            return passwordValidationSection.isDisplayed();
+        } catch (Exception e) {
+            log.warn("Password validation section not found");
+            return false;
+        }
+    }
+    
     public String getCurrentUrl() {
         return driver.getCurrentUrl();
     }

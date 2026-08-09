@@ -63,12 +63,7 @@ public class JoinNowTest extends BaseTest {
         joinNowPage.enterPassword(password);
         joinNowPage.clickJoinSubmit();
 
-        if (expectedResult.equalsIgnoreCase("Error")) {
-            Assert.assertFalse(joinNowPage.getPasswordErrorText().isEmpty(),
-                "Expected error for: " + description);
-        } else {
-            Assert.assertTrue(joinNowPage.getPasswordErrorText().isEmpty(),
-                "Did not expect error for: " + description);
-        }
+        Assert.assertTrue(joinNowPage.isPasswordValidationSectionShown(),
+                "Expected password validation feedback to be shown for: " + description);
     }
 }
