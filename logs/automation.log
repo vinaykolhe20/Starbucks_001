@@ -1,0 +1,45 @@
+2026-08-09 14:20:06 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email=''
+2026-08-09 14:20:06 [main] INFO  pages.JoinNowPage - Entering registration email: 
+2026-08-09 14:20:07 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:20:08 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:20:09 [main] INFO  pages.JoinNowPage - Getting email validation error text
+2026-08-09 14:20:37 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email='sdfdshbfb'
+2026-08-09 14:20:37 [main] INFO  pages.JoinNowPage - Entering registration email: sdfdshbfb
+2026-08-09 14:20:37 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:20:38 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:20:38 [main] INFO  pages.JoinNowPage - Getting email validation error text
+2026-08-09 14:21:05 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email='kumargmail.com'
+2026-08-09 14:21:05 [main] INFO  pages.JoinNowPage - Entering registration email: kumargmail.com
+2026-08-09 14:21:05 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:21:06 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:21:06 [main] INFO  pages.JoinNowPage - Getting email validation error text
+2026-08-09 14:21:32 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email='.@gmail'
+2026-08-09 14:21:32 [main] INFO  pages.JoinNowPage - Entering registration email: .@gmail
+2026-08-09 14:21:33 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:21:34 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:21:34 [main] INFO  pages.JoinNowPage - Getting email validation error text
+2026-08-09 14:22:04 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email='user@.com'
+2026-08-09 14:22:04 [main] INFO  pages.JoinNowPage - Entering registration email: user@.com
+2026-08-09 14:22:05 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:22:05 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:22:05 [main] INFO  pages.JoinNowPage - Getting email validation error text
+2026-08-09 14:22:34 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email='user name@example.com'
+2026-08-09 14:22:34 [main] INFO  pages.JoinNowPage - Entering registration email: user name@example.com
+2026-08-09 14:22:34 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:22:34 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:22:35 [main] INFO  pages.JoinNowPage - Getting email validation error text
+2026-08-09 14:22:57 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email='user@@example.com'
+2026-08-09 14:22:57 [main] INFO  pages.JoinNowPage - Entering registration email: user@@example.com
+2026-08-09 14:22:57 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:22:58 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:22:58 [main] INFO  pages.JoinNowPage - Getting email validation error text
+2026-08-09 14:23:35 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email='user@example..com'
+2026-08-09 14:23:35 [main] INFO  pages.JoinNowPage - Entering registration email: user@example..com
+2026-08-09 14:23:35 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:23:36 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:23:36 [main] INFO  pages.JoinNowPage - Getting email validation error text
+2026-08-09 14:23:57 [main] INFO  tests.JoinNowTest - TC27 [Excel-driven]:  -> email='user@example.c'
+2026-08-09 14:23:57 [main] INFO  pages.JoinNowPage - Entering registration email: user@example.c
+2026-08-09 14:23:58 [main] INFO  pages.JoinNowPage - Entering registration password
+2026-08-09 14:23:58 [main] INFO  pages.JoinNowPage - Clicking Join Now submit button
+2026-08-09 14:23:59 [main] INFO  pages.JoinNowPage - Getting email validation error text

@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-08T10:34:39 IST" name="Default suite" finished-at="2026-08-08T10:35:26 IST" duration-ms="47320">
+  <suite started-at="2026-08-09T14:19:39 IST" name="Default suite" finished-at="2026-08-09T14:24:00 IST" duration-ms="261133">
     <groups>
       <group name="negative">
-        <method signature="SignInTest.verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)[pri:24, instance:tests.SignInTest@3b0090a4]" name="verify_InvalidPasswordFormats_ShowValidationError" class="tests.SignInTest"/>
+        <method signature="JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" name="verify_JoinNow_InvalidEmail_ShowsValidationError" class="tests.JoinNowTest"/>
       </group> <!-- negative -->
       <group name="auth">
-        <method signature="SignInTest.verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)[pri:24, instance:tests.SignInTest@3b0090a4]" name="verify_InvalidPasswordFormats_ShowValidationError" class="tests.SignInTest"/>
+        <method signature="JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" name="verify_JoinNow_InvalidEmail_ShowsValidationError" class="tests.JoinNowTest"/>
       </group> <!-- auth -->
       <group name="regression">
-        <method signature="SignInTest.verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)[pri:24, instance:tests.SignInTest@3b0090a4]" name="verify_InvalidPasswordFormats_ShowValidationError" class="tests.SignInTest"/>
+        <method signature="JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" name="verify_JoinNow_InvalidEmail_ShowsValidationError" class="tests.JoinNowTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2026-08-08T10:34:39 IST" name="Default test" finished-at="2026-08-08T10:35:26 IST" duration-ms="47320">
-      <class name="tests.SignInTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:34:39 IST" name="setUp" finished-at="2026-08-08T10:34:57 IST" duration-ms="17566" status="PASS">
+    <test started-at="2026-08-09T14:19:39 IST" name="Default test" finished-at="2026-08-09T14:24:00 IST" duration-ms="261133">
+      <class name="tests.JoinNowTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:19:40 IST" name="setUp" finished-at="2026-08-09T14:19:58 IST" duration-ms="17796" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.SignInTest.verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)]]>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateToSignIn()[pri:0, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:34:57 IST" name="navigateToSignIn" finished-at="2026-08-08T10:35:04 IST" duration-ms="7453" status="PASS">
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:19:58 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:20:06 IST" duration-ms="8043" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToSignIn -->
-        <test-method signature="verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)[pri:24, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:35:04 IST" name="verify_InvalidPasswordFormats_ShowValidationError" data-provider="invalidPasswords" finished-at="2026-08-08T10:35:05 IST" duration-ms="927" status="PASS">
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:20:06 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:20:09 IST" duration-ms="2821" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
               <value>
                 <![CDATA[]]>
               </value>
@@ -41,60 +51,399 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_InvalidPasswordFormats_ShowValidationError -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:35:05 IST" name="tearDown" finished-at="2026-08-08T10:35:05 IST" duration-ms="249" status="PASS">
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:20:09 IST" name="tearDown" finished-at="2026-08-09T14:20:12 IST" duration-ms="3041" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_InvalidPasswordFormats_ShowValidationError status=SUCCESS method=SignInTest.verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)[pri:24, instance:tests.SignInTest@3b0090a4] output={null}]]]>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:35:05 IST" name="setUp" finished-at="2026-08-08T10:35:19 IST" duration-ms="14018" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:20:12 IST" name="setUp" finished-at="2026-08-09T14:20:28 IST" duration-ms="16402" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.SignInTest.verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)]]>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateToSignIn()[pri:0, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:35:19 IST" name="navigateToSignIn" finished-at="2026-08-08T10:35:26 IST" duration-ms="6418" status="PASS">
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:20:28 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:20:37 IST" duration-ms="8281" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToSignIn -->
-        <test-method signature="verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)[pri:24, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:35:26 IST" name="verify_InvalidPasswordFormats_ShowValidationError" data-provider="invalidPasswords" finished-at="2026-08-08T10:35:26 IST" duration-ms="410" status="PASS">
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:20:37 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:20:39 IST" duration-ms="1990" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[   ]]>
+                <![CDATA[sdfdshbfb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_InvalidPasswordFormats_ShowValidationError -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:35:26 IST" name="tearDown" finished-at="2026-08-08T10:35:26 IST" duration-ms="244" status="PASS">
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:20:39 IST" name="tearDown" finished-at="2026-08-09T14:20:40 IST" duration-ms="948" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_InvalidPasswordFormats_ShowValidationError status=SUCCESS method=SignInTest.verify_InvalidPasswordFormats_ShowValidationError(java.lang.String)[pri:24, instance:tests.SignInTest@3b0090a4] output={null}]]]>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.SignInTest@3b0090a4]" started-at="2026-08-08T10:35:26 IST" name="flushReport" finished-at="2026-08-08T10:35:26 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:20:40 IST" name="setUp" finished-at="2026-08-09T14:20:56 IST" duration-ms="16353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:20:56 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:21:05 IST" duration-ms="8644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:21:05 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:21:06 IST" duration-ms="1758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kumargmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:21:06 IST" name="tearDown" finished-at="2026-08-09T14:21:08 IST" duration-ms="1210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:21:08 IST" name="setUp" finished-at="2026-08-09T14:21:24 IST" duration-ms="16381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:21:24 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:21:32 IST" duration-ms="8300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:21:32 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:21:34 IST" duration-ms="2271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[.@gmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:21:34 IST" name="tearDown" finished-at="2026-08-09T14:21:35 IST" duration-ms="925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:21:35 IST" name="setUp" finished-at="2026-08-09T14:21:50 IST" duration-ms="14626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:21:50 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:22:04 IST" duration-ms="14324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:04 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:22:05 IST" duration-ms="1071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:05 IST" name="tearDown" finished-at="2026-08-09T14:22:06 IST" duration-ms="488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:06 IST" name="setUp" finished-at="2026-08-09T14:22:26 IST" duration-ms="19990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:26 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:22:34 IST" duration-ms="7670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:34 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:22:35 IST" duration-ms="1006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user name@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:35 IST" name="tearDown" finished-at="2026-08-09T14:22:35 IST" duration-ms="375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:35 IST" name="setUp" finished-at="2026-08-09T14:22:49 IST" duration-ms="14207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:49 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:22:57 IST" duration-ms="7884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:57 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:22:58 IST" duration-ms="1062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:58 IST" name="tearDown" finished-at="2026-08-09T14:22:59 IST" duration-ms="580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:22:59 IST" name="setUp" finished-at="2026-08-09T14:23:24 IST" duration-ms="25304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:23:24 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:23:35 IST" duration-ms="10857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:23:35 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:23:36 IST" duration-ms="1037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@example..com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:23:36 IST" name="tearDown" finished-at="2026-08-09T14:23:36 IST" duration-ms="404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:23:36 IST" name="setUp" finished-at="2026-08-09T14:23:50 IST" duration-ms="13629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToJoinNow()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:23:50 IST" name="navigateToJoinNow" finished-at="2026-08-09T14:23:57 IST" duration-ms="7388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToJoinNow -->
+        <test-method signature="verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:23:57 IST" name="verify_JoinNow_InvalidEmail_ShowsValidationError" data-provider="joinNowEmails" finished-at="2026-08-09T14:23:59 IST" duration-ms="1725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@example.c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Error]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_JoinNow_InvalidEmail_ShowsValidationError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:23:59 IST" name="tearDown" finished-at="2026-08-09T14:24:00 IST" duration-ms="1285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_JoinNow_InvalidEmail_ShowsValidationError status=SUCCESS method=JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError(java.lang.String,java.lang.String,java.lang.String)[pri:27, instance:tests.JoinNowTest@1021f6c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.JoinNowTest@1021f6c9]" started-at="2026-08-09T14:24:00 IST" name="flushReport" finished-at="2026-08-09T14:24:01 IST" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- tests.SignInTest -->
+      </class> <!-- tests.JoinNowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

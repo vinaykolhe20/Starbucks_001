@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 08 10:34:39 IST 2026</td>
+<td>Started on:</td><td>Sun Aug 09 14:19:39 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>47 seconds (47320 ms)</td>
+<tr><td>Total time:</td><td>261 seconds (261133 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,50 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SignInTest.verify_InvalidPasswordFormats_ShowValidationError()'><b>verify_InvalidPasswordFormats_ShowValidationError</b><br>Test class: tests.SignInTest<br>Parameters:    </td>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: user name@example.com, Error, </td>
 <td></td>
-<td>0</td>
-<td>tests.SignInTest@3b0090a4</td></tr>
+<td>1</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
 <tr>
-<td title='tests.SignInTest.verify_InvalidPasswordFormats_ShowValidationError()'><b>verify_InvalidPasswordFormats_ShowValidationError</b><br>Test class: tests.SignInTest<br>Parameters: </td>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: user@@example.com, Error, </td>
 <td></td>
-<td>0</td>
-<td>tests.SignInTest@3b0090a4</td></tr>
+<td>1</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
+<tr>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: user@example.c, Error, </td>
+<td></td>
+<td>1</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
+<tr>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: user@example..com, Error, </td>
+<td></td>
+<td>1</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
+<tr>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: .@gmail, Error, </td>
+<td></td>
+<td>2</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
+<tr>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: user@.com, Error, </td>
+<td></td>
+<td>1</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
+<tr>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: , Error, </td>
+<td></td>
+<td>2</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
+<tr>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: kumargmail.com, Error, </td>
+<td></td>
+<td>1</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
+<tr>
+<td title='tests.JoinNowTest.verify_JoinNow_InvalidEmail_ShowsValidationError()'><b>verify_JoinNow_InvalidEmail_ShowsValidationError</b><br>Test class: tests.JoinNowTest<br>Parameters: sdfdshbfb, Error, </td>
+<td></td>
+<td>1</td>
+<td>tests.JoinNowTest@1021f6c9</td></tr>
 </table><p>
 </body>
 </html>

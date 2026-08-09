@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.SignInTest">
+      <class name="tests.JoinNowTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="navigateToSignIn"/>
-          <include name="verify_InvalidPasswordFormats_ShowValidationError" invocation-numbers="0 1"/>
+          <include name="verify_JoinNow_InvalidEmail_ShowsValidationError" invocation-numbers="1 2 3 4 5 6 7 8"/>
           <include name="flushReport"/>
+          <include name="navigateToJoinNow"/>
         </methods>
-      </class> <!-- tests.SignInTest -->
+      </class> <!-- tests.JoinNowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
