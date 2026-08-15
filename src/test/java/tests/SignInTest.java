@@ -8,6 +8,10 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pages.HomePage;
 import pages.SignInPage;
+import io.restassured.RestAssured;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
 public class SignInTest extends BaseTest{
 	SignInPage signInPage;

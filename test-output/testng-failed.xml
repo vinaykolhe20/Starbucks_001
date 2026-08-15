@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.JoinNowTest">
+      <class name="tests.API_Test">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verify_JoinNow_PasswordStrengthValidation"/>
-          <include name="flushReport"/>
-          <include name="navigateToJoinNow"/>
+          <include name="testGetSinglePost"/>
         </methods>
-      </class> <!-- tests.JoinNowTest -->
+      </class> <!-- tests.API_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
