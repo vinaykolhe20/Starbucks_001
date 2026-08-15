@@ -24,4 +24,19 @@ public class API_Test {
 	            .body("userId", equalTo(1))
 	            .body("id", equalTo(1));
 	    }
+	
+	@Test
+	 public void testGetTitle() {
+	        given()
+	            .baseUri("https://jsonplaceholder.typicode.com")
+	        .when()
+	            .get("/posts/1")
+	        .then()
+	            .statusCode(200)
+	            .body("title", notNullValue())
+	            .body("userId", equalTo(1))
+	            .body("id", equalTo(1));
+	    }
+	
+	
 }

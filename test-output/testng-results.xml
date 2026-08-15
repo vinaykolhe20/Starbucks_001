@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-15T20:25:20 IST" name="Default suite" finished-at="2026-08-15T20:25:24 IST" duration-ms="4277">
+  <suite started-at="2026-08-15T20:30:07 IST" name="Default suite" finished-at="2026-08-15T20:30:13 IST" duration-ms="5719">
     <groups>
     </groups>
-    <test started-at="2026-08-15T20:25:20 IST" name="Default test" finished-at="2026-08-15T20:25:24 IST" duration-ms="4277">
+    <test started-at="2026-08-15T20:30:07 IST" name="Default test" finished-at="2026-08-15T20:30:13 IST" duration-ms="5719">
       <class name="tests.API_Test">
-        <test-method signature="testGetSinglePost()[pri:0, instance:tests.API_Test@7b98f307]" started-at="2026-08-15T20:25:20 IST" name="testGetSinglePost" finished-at="2026-08-15T20:25:24 IST" duration-ms="4190" status="PASS">
+        <test-method signature="testGetTitle()[pri:0, instance:tests.API_Test@4802796d]" started-at="2026-08-15T20:30:07 IST" name="testGetTitle" finished-at="2026-08-15T20:30:13 IST" duration-ms="5631" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetSinglePost -->
+        </test-method> <!-- testGetTitle -->
       </class> <!-- tests.API_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
