@@ -39,6 +39,8 @@ public class HomePage {
     @FindBy(css = "footer") WebElement footer;
     @FindBy(xpath = "//footer//h2 | //footer//h3") List<WebElement> footerSectionHeadings;
     
+    @FindBy(xpath="//a[contains(text(), 'Gifts')]") WebElement sendGifts;
+    
  // Create a reusable wait method in BaseTest.java
     
     public HomePage(WebDriver driver) {
@@ -95,6 +97,10 @@ public class HomePage {
 
     public void homeJoinNow() {
     	waitForElement(joinNow).click();
+    }
+    
+    public void homeGifts() {
+    	waitForElement(sendGifts).click();
     }
     
     public void homeStartOrder() {
