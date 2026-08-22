@@ -73,7 +73,7 @@ public class BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
- // Add this in BaseTest.java after driver.get()
+
     public void handleCookiePopup() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -86,7 +86,7 @@ public class BaseTest {
         }
     }
     
- // Add this in BaseTest.java
+
     public void takeScreenshot(String testName) {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File src = ts.getScreenshotAs(OutputType.FILE);
